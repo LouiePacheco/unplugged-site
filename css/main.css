@@ -239,7 +239,6 @@ footer p {
   flex-flow: row wrap;
 }
 
-aside {
   display: flex;
   align-items: center;
   justify-content:center;
