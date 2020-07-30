@@ -94,6 +94,8 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: left;
+    color: #e2e3ed;
+
   }
   ul,
   ol {
@@ -117,12 +119,6 @@ textarea {
     font-size: 1em;
     line-height: 1.285;
   }
-  img {
-
-  }
-  figure {
-
-  }
   address {
     font-style: italic;
     
@@ -130,6 +126,31 @@ textarea {
   .content-wrapper {
     width: 90%;
     margin: 50px;
+  }
+  aside .form {
+    margin-top: 30px;
+  }
+  
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
   }
 
    /* -------------------- Base Header - Footer Styles -------------------- */
@@ -140,6 +161,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #333333;
 }
 header {
   padding: 15px 0;
@@ -162,6 +184,9 @@ header nav {
   justify-content: space-around;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 header .content-wrapper {
   display: flex;
@@ -219,6 +244,7 @@ aside {
   align-items: center;
   justify-content:center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 /* Features */
@@ -244,12 +270,15 @@ aside {
 }
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .reviews {
   display: flex;
   justify-content:center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+
 }
 .reviews h2 {
   margin-bottom: 40px;
@@ -435,7 +464,7 @@ contact-content p {
       flex-basis: 50%;
     }
     .features .features-item-description {
-      width: 50%;
+      width: 62%;
   }
 
   /* Reviews */
@@ -447,6 +476,12 @@ contact-content p {
   .reviews article div {
       width:49%;        
   }
+  .reviews h2 {
+    width: 85%;
+  }
+  .reviews h3 {
+    width: 75%;
+  }
 
   /* Footer */
   footer .content-wrapper {
@@ -454,10 +489,11 @@ contact-content p {
       margin: 100px 0;
   }
   
-  .footer-content {
+  footer .footer-content {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+
   }
 
   footer .contact {
@@ -503,7 +539,7 @@ contact-content p {
       width: 100%;
     }
   }
-}
+
 @media only screen and (min-width: 1200px) {
   /*desktop styles here*/
   .content-wrapper {
